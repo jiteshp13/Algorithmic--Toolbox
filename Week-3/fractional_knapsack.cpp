@@ -31,7 +31,7 @@ double get_optimal_value(int capacity, vector<int> weights, vector<int> values)
     
     for(int i = 0; i < n; i++)
     {
-        if(capacity != 0)
+        if(capacity > 0)
         {
             int index = perunit[i][1];          //gives the index to which the per unit value belongs in the weights[]
             
@@ -43,8 +43,6 @@ double get_optimal_value(int capacity, vector<int> weights, vector<int> values)
             
             capacity = capacity - a;
         }
-        else
-            break;                              //knapsack is full
     }
 
     return value;
