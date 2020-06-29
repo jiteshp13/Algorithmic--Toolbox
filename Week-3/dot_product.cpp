@@ -1,4 +1,4 @@
-#include <algorithm>
+#include <algorithm>             // Dot-Product
 #include <iostream>
 #include <vector>
 
@@ -44,5 +44,5 @@ int main() {
   for (size_t i = 0; i < n; i++) {
     std::cin >> b[i];
   }
-  std::cout << max_dot_product(a, b) << std::endl;
+  std::cout << max_dot_product(a, b) << std::endl; // Printing the maximum sum of dot product
 }
